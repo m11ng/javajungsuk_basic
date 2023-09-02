@@ -23,6 +23,9 @@ class ThreadEx1_2 implements Runnable {
 		for(int i=0; i < 5; i++) {
 			// Thread.currentThread() - 현재 실행중인 Thread를 반환한다.
 			System.out.println(Thread.currentThread().getName());
+			// Thread를 상속받지 않는 상태니까. Thread클래스의 currentThread메소드를 이용해서
+			// 현재실행중인 쓰레드를 반환한다.
+			
 		}
 	}
 }
