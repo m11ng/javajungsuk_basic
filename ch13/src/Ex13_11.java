@@ -8,10 +8,7 @@ class Ex13_11 {
 		th2.start();
 		startTime = System.currentTimeMillis();
 
-		try {
-			th1.join();	// main쓰레드가 th1의 작업이 끝날 때까지 기다린다.
-			th2.join();	// main쓰레드가 th2의 작업이 끝날 때까지 기다린다.
-		} catch(InterruptedException e) {}
+ 
 
 		System.out.print("소요시간:" + (System.currentTimeMillis() - Ex13_11.startTime));
 	} // main
